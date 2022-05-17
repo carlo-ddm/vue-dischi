@@ -22,9 +22,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/styles/vars';
+
 .cd-card {
   flex-basis: calc(100% / 6);
   height: 300px;
   border: 1px solid white;
+  background-color: $colore-primario;
 }
 </style>
