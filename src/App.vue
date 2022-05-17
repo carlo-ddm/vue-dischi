@@ -20,7 +20,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/styles/vars';
 @import './assets/styles/general';
 
 </style>

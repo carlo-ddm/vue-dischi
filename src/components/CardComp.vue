@@ -1,23 +1,13 @@
 <template>
-<div class="cd-container d-flex justify-content-between flex-wrap">
-  <div class="cd-card m-2"></div>
-  <div class="cd-card m-2"></div>
-  <div class="cd-card m-2"></div>
-  <div class="cd-card m-2"></div>
-  <div class="cd-card m-2"></div>
-  <div class="cd-card m-2"></div>
-  <div class="cd-card m-2"></div>
-  <div class="cd-card m-2"></div>
-  <div class="cd-card m-2"></div>
-  <div class="cd-card m-2"></div>
-
+<div class="cd-card m-2">
+  <img :src="cardItem.poster" :alt="cardItem.author">
 </div>
-
 </template>
 
 <script>
 export default {
-  name: 'CardComp'
+  name: 'CardComp',
+  props: {cardItem: Object}
 }
 </script>
 
@@ -27,7 +17,10 @@ export default {
 .cd-card {
   flex-basis: calc(100% / 6);
   height: 300px;
-  border: 1px solid white;
   background-color: $colore-primario;
+
+  img {
+    width: 100%;
+  }
 }
 </style>
