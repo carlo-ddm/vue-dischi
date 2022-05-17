@@ -19,7 +19,7 @@ export default {
 @import '../assets/styles/_vars.scss';
 .cd-container {
   width: 100%;
-  height: 60px;
+  height: 6vh;
   background-color: $colore-primario;
 
   svg {
