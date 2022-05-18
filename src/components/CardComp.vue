@@ -1,6 +1,11 @@
 <template>
 <div class="cd-card m-2">
   <img :src="cardItem.poster" :alt="cardItem.author">
+  <div class="title" >{{cardItem.title}}</div>
+  <div>
+    <div>{{cardItem.author}}</div>
+    <div>{{cardItem.year}}</div>
+  </div>
 </div>
 </template>
 
@@ -22,5 +27,15 @@ export default {
   img {
     width: 100%;
   }
+
+  .title{
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+  }
+  div {
+    text-align: center;
+    color: #605E5D;
+  }
 }
-</style>
+</style> 
